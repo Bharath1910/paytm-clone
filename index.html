@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PayTM Clone</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+              'tablet': '640px',    
+              'laptop': '1024px',
+              'desktop': '1280px',
+            },
+            extend: {
+              colors: {
+                'primary': '#0F4A8A',
+                'highlight': '#00BAF2'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <nav class="p-3 flex justify-between items-center">
+        <div class="w-40">
+            <img class="w-40" src="./images/paytm_logo.png" alt="logo">
+        </div>
+
+        <ul class="hidden">
+            <li class="">Paytm for Consumer</li>
+            <li class="">Paytm for Business</li>
+            <li class="">Company</li>
+            <li class="">Investor Relations</li>
+            <li class="">Career</li>
+        </ul>
+
+        <div class="">
+            <a class="bg-highlight text-white pl-2 pr-1 py-2.5 rounded-full" href="#">Sign In <i class='fa-solid fa-user bg-primary rounded-full p-2'></i></a>
+        </div>
+    </nav>
+
+    <div class="notification">
+        <p class="text-center"><span class="font-semibold">No Wallet KYC Required</span> 😊to pay using UPI on Paytm. <a class="font-semibold" href="#">Learn more.</a></p>
+    </div>
+
+    <div class="">
+        <div class="container mx-auto w-3/4 mt-10">
+            <img src="./images/hero_image.png" alt="">
+        </div>
+
+        <div class="container mx-auto mt-10 w-3/4">
+            <img src="./images/secondary_logo.png" class="hidden">
+            <h1 class="text-4xl font-bold">India's Most-loved Payments App</h1>
+            <p class="font-semibold my-8">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+            <a class="bg-black text-white p-2 rounded-full font-semibold" href="#">Download Paytm App <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-google-play"></i></a>
+        </div>
+    </div>
+</body>
+</html>
